@@ -1,6 +1,6 @@
 <?php
 
-include_once('data/connection.php');
+include_once('../data/connection.php');
 /*
 include = gak ada pun ga error
 require = connection.php harus ada
@@ -8,7 +8,7 @@ require = connection.php harus ada
 
 
 //fetching data from database
-$result = mysqli_query($connection, "SELECT * FROM packages ORDER BY pkg_id ASC");
+$result = mysqli_query($mysqli, "SELECT * FROM packages ORDER BY pkg_id ASC");
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ $result = mysqli_query($connection, "SELECT * FROM packages ORDER BY pkg_id ASC"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Konter Om Kumis</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="../style/admin.css">
 </head>
 
 <body>

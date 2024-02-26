@@ -9,7 +9,7 @@ require = connection.php harus ada
 $selectedPkg = $_GET['id'];
 
 //fetching data from database
-$result = mysqli_query($mysqli, "SELECT * FROM packages WHERE pkg_id = $selectedPkg");
+$result = mysqli_query($connection, "SELECT * FROM packages WHERE pkg_id = $selectedPkg");
 
 ?>
 
