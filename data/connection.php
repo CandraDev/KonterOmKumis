@@ -5,5 +5,9 @@ $databaseName = 'konter_omkumis'; // kuncinya, pastikan sesuai
 $databaseUsername = 'root';
 $databasePassword = '';
 
-$mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword,  $databaseName);
+$connection = mysqli_connect($databaseHost, $databaseUsername, $databasePassword,  $databaseName);
+if ($connection) {
+} else {
+    echo "databes ga terhubung";
+}
 ?>
