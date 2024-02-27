@@ -59,7 +59,7 @@ html, body {
 
 .main-container {
     display: flex;
-    padding: 20vh 0 60vh 0;
+    padding: 20vh 0 20vh 0;
 
     background-color: #ebebeb;
     justify-content: center;
@@ -69,8 +69,6 @@ html, body {
 .catalogues-container {
     display: grid;
     grid-template-columns: 140px 140px 140px;
-    column-gap: 120px;
-    row-gap: 70px;
 }
 
 .catalogues-container a {
@@ -137,6 +135,69 @@ html, body {
     text-align: center;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    border-radius: 20px;
+    padding: 80px;
+
+    background-color: white;
+    
+    box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.2);
+    -webkit-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.2);
+    -moz-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.2);
+}
+
+.form-container div h1 {
+    text-align: center;
+}
+
+input[name=username], input[type=password], input[type=text],
+input[type=number]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.form-container button {
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    background: linear-gradient(92deg, rgb(80, 50, 250), rgb(2, 0, 143));
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.form-container button:active {
+    position: relative;
+    top: 7px;
+}
+
+.form-container button:hover {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 1800ms;
+
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+    -webkit-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+    -moz-box-shadow: 3px 3px 20px 3px rgba(41, 221, 227, 0.6);
+}
+.form-container label {
+    font-size: 20px;
+    width: 100%;
 }
 
 .footer-container {

@@ -21,7 +21,6 @@ if(isset($_POST['btnLogin'])){
         echo "<script type='text/javascript'>
             alert('Username atau Password Anda Salah!');
             </script>";
-        header("location:login.php");
     }
 }
 

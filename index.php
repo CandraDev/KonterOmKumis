@@ -31,7 +31,7 @@ $result = mysqli_query($connection, "SELECT * FROM packages ORDER BY pkg_id ASC"
                 <div class="nav-items">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="menu.php">Menu</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>
                 </div>
@@ -68,7 +68,7 @@ $result = mysqli_query($connection, "SELECT * FROM packages ORDER BY pkg_id ASC"
                 while($packages = mysqli_fetch_array($result)) {
                     
                     echo "
-                        <a href='pages/pkgdetail.php?id=".$packages['pkg_id']."'>
+                        <a href='pkgdetail.php?id=".$packages['pkg_id']."'>
                         <div class='catalogues'>
                             <div class='catalogue-hero'><img src='".$packages['pkg_thumbimg']."'></div>
                             <div class='catalogue-detail'>

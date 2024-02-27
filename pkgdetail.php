@@ -1,6 +1,6 @@
 <?php
 
-include_once('../data/connection.php');
+include_once('data/connection.php');
 /*
 include = gak ada pun ga error
 require = connection.php harus ada
@@ -20,7 +20,7 @@ $result = mysqli_query($connection, "SELECT * FROM packages WHERE pkg_id = $sele
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Konter Om Kumis</title>
-    <link rel="stylesheet" href="../style/pkgdetail.css">
+    <link rel="stylesheet" href="style/pkgdetail.css">
 
 </style>
 </head>
@@ -34,8 +34,8 @@ $result = mysqli_query($connection, "SELECT * FROM packages WHERE pkg_id = $sele
                 </div>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="menu.php">Menu</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>
                 </div>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['login'])){
+if (isset($_SESSION['login'])){
     echo "<script type='text/javascript'>
     alert('Harus Login Terlebih Dahulu)
     window.location = 'login.php'

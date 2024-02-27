@@ -35,7 +35,7 @@ if(isset($_POST['btnRegister'])) {
 <body>
     <fieldset>
         <legend>Register</legend>
-        <form action=".." method='post'>
+        <form action="" method='post'>
             <input type="text" name="name" placeholder="Masukan nama Anda..." required>
             <input type="username" name="username" placeholder="Masukan username Anda..." required>
             <input type="email" name="email" placeholder="Masukan email Anda..." required>
